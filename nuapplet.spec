@@ -16,6 +16,7 @@ BuildRequires: libeel-devel
 BuildRequires: scrollkeeper
 BuildRequires: perl-XML-Parser
 BuildRequires: libnuclient-devel
+BuildRequires: intltool
 Requires: libnuclient
 
 %description
