@@ -30,6 +30,7 @@ It supports multiple languages thanks to gettext.
 %setup -q
 
 sh autogen.sh
+intltoolize
 
 %build
 %configure2_5x
@@ -37,7 +38,7 @@ make
 
 %install
 rm -rf %buildroot
-%makeinstall
+%makeinstall_std
 
 %find_lang %name
 
