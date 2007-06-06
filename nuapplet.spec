@@ -1,6 +1,6 @@
 %define name nuapplet
 %define version 0.7
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: NuFW applet for the GNOME panel
 Name: %{name}
@@ -17,7 +17,6 @@ BuildRequires: scrollkeeper
 BuildRequires: perl-XML-Parser
 BuildRequires: libnuclient-devel
 BuildRequires: intltool
-Requires: libnuclient
 
 %description
 NuApplet is a graphical client for NuFW. It is a GNOME 2.x applet 
