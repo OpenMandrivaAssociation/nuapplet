@@ -1,6 +1,6 @@
 %define name nuapplet
 %define version 0.7
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary: NuFW applet for the GNOME panel
 Name: %{name}
