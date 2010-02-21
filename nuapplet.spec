@@ -1,22 +1,22 @@
-%define name nuapplet
-%define version 0.7
-%define release %mkrel 6
+%define	name	nuapplet
+%define version	0.7
+%define	release	%mkrel 7
 
-Summary: NuFW applet for the GNOME panel
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://software.inl.fr/releases/Nuapplet/%{name}-%{version}.tar.bz2
-License: GPL
-Group: Monitoring
-Url: http://software.inl.fr/releases/Nuapplet/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: gnome-panel-devel
-BuildRequires: libeel-devel
-BuildRequires: scrollkeeper
-BuildRequires: perl-XML-Parser
-BuildRequires: libnuclient-devel
-BuildRequires: intltool
+Summary:	NuFW applet for the GNOME panel
+Name:		%{name}
+Version:	%{version}
+Release:	%{release}
+Source0:	http://software.inl.fr/releases/Nuapplet/%{name}-%{version}.tar.bz2
+License:	GPL
+Group:		Monitoring
+Url:		http://software.inl.fr/releases/Nuapplet/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	gnome-panel-devel
+BuildRequires:	libeel-devel
+BuildRequires:	scrollkeeper
+BuildRequires:	perl-XML-Parser
+BuildRequires:	libnuclient-devel
+BuildRequires:	intltool
 
 %description
 NuApplet is a graphical client for NuFW. It is a GNOME 2.x applet 
@@ -28,7 +28,6 @@ It supports multiple languages thanks to gettext.
 
 %prep
 %setup -q
-
 sh autogen.sh
 intltoolize
 
@@ -39,7 +38,6 @@ make
 %install
 rm -rf %buildroot
 %makeinstall_std
-
 %find_lang %name
 
 %clean
