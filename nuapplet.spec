@@ -9,7 +9,7 @@ Release:	%{release}
 Source0:	http://software.inl.fr/releases/Nuapplet/%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Monitoring
-Url:		http://software.inl.fr/releases/Nuapplet/
+Url:		https://software.inl.fr/releases/Nuapplet/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	gnome-panel-devel
 BuildRequires:	libeel-devel
