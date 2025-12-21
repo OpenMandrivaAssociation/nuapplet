@@ -11,6 +11,11 @@ License:	GPL
 Group:		Monitoring
 Url:		https://software.inl.fr/releases/Nuapplet/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gnome-panel-devel
 BuildRequires:	libeel-devel
 BuildRequires:	scrollkeeper
